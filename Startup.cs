@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using HelloAspDotnetCore.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace HelloAspDotnetCore
 {
@@ -31,6 +33,9 @@ namespace HelloAspDotnetCore
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<HelloAspDotnetCoreContext>(
+                o => o.UseSqlite(Configuration.GetConnectionString("HelloAspDotnetCoreConnectionString"))
+            );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
