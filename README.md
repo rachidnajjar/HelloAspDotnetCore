@@ -2,9 +2,8 @@
 
 Hello world for asp.net core application
 
-sources :
-    > <https://docs.microsoft.com/fr-fr/dotnet/samples-and-tutorials/>
-    > <https://docs.microsoft.com/fr-fr/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.2>
+<https://docs.microsoft.com/fr-fr/dotnet/samples-and-tutorials/>
+<https://docs.microsoft.com/fr-fr/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.2>
 
 1. Créer le projet :
     > dotnet new webapp
